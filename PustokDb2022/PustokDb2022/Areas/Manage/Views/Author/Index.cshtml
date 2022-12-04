@@ -1,0 +1,14 @@
+﻿@model DashboardViewModel
+
+<h2 style="color:grey" class="m-sm-3">Authors</h2>
+
+<table class="table table-hover">
+  
+@foreach (var author in Model.Authors)
+{
+        <tr>
+            <th scope="col">@author.Id</th>
+            <th scope="col">@author.FullName</th>
+        </tr>
+}
+</table>
